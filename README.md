@@ -1,4 +1,15 @@
-# DocuMind
+---
+title: DocuMind
+emoji: 🧠
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+short_description: AI-powered document Q&A — upload a PDF, ask questions.
+---
+
+
 
 DocuMind is a RAG-powered document Q&A system that lets users upload PDFs and ask grounded questions about their content.
 

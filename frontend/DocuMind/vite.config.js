@@ -9,4 +9,12 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/setupTests.js',
   },
+  server: {
+    proxy: {
+      // Forwards /upload, /query, /health to the local FastAPI backend
+      '/upload': 'http://localhost:8000',
+      '/query': 'http://localhost:8000',
+      '/health': 'http://localhost:8000',
+    },
+  },
 })

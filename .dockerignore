@@ -1,0 +1,57 @@
+# Secrets - never bake into image
+.env
+.env.*
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments (huge - never copy)
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+
+# Generated FAISS indexes and uploaded files (runtime data)
+faiss_index/
+backend/faiss_index/
+uploads/
+tmp/
+*.faiss
+chunks.json
+eval_results.json
+
+# Frontend build artifacts (built in Stage 1)
+frontend/DocuMind/node_modules/
+frontend/DocuMind/dist/
+frontend/DocuMind/.vite/
+frontend/DocuMind/coverage/
+
+# Git
+.git/
+.gitignore
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Docker
+docker/
+*.tar
+*.pid
+
+# Docs / test files
+*.pdf
+README.md
